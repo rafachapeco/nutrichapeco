@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-primary: #415D47;
+    --color-secondary: #F4B6AD;
+    --color-tertiary: #FDF0DD;
+    --color-black: #000;
+    --color-white: #fff;
+}
+
+body {
+    background-color: var(--color-white);
+}
+
+.container {
+    padding: 1rem 0rem 2rem;
+}
+
+header {
+    background-color: var(--color-primary);
+    margin-bottom: 2rem;
+}
+
+header img {
+    display: block;
+    margin: 1rem auto;
+    width: 8rem;
+    height: 8rem;
+}
+
+header nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1rem auto 0; /* == margin-top: 1rem; margin-left: auto; margin-right: auto;*/
+}
+
+nav a {
+    color: var(--color-secondary);
+    font-size: 1.25rem;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+header nav a:nth-child(2n-1) {
+    text-align: right;
+}
+
+
+footer {
+    background-color: var(--color-primary);
+    border-bottom: 0;
+}
+
+footer div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+}
+
+footer nav {
+    display: block;
+    text-align: center;
+    margin: 1rem auto 0;
+}
+
+footer img {
+    width: 12rem;
+    height: 12rem;
+}
+
+.button {
+    background: linear-gradient(to right, var(--color-secondary) 0%, var(--color-tertiary) 50%, var(--color-tertiary) 100%);
+    border-radius: 30px;
+    color: var(--color-black);
+    display: block;
+    font-size: 1rem;
+    padding: .75rem 1rem;
+    max-width: 18rem;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: inherit;
+    letter-spacing: .07rem;
+    background-size: 200% auto;
+    transition-duration: 0.8s;
+} 
+
+.button:hover {
+    background-position: right center;
+}
+
+/* UTILITÁRIOS */
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-primary {
+    color: var(--color-secondary);
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* RESPONSIVIDADE */
+
+@media screen and (min-width: 40rem){
+    header nav {
+        display: block;
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width: 48rem){
+    header div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* header img,
+    header nav,
+    header .button {
+        margin: 0;
+    } */
+
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-white);
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--color-secondary);
+}

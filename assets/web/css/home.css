@@ -1,0 +1,139 @@
+.hero-section {
+    padding-right: 0;
+    padding-bottom: 16rem;
+}
+
+.hero-section img {
+    display: block;
+    margin: 0 auto 4rem auto;
+    max-width: 100%;
+    width: 20rem;
+    height: 20rem;
+    align-items: center;
+}
+
+h1 {
+    margin: 0 3rem 0 3rem;
+    font-size: 3rem;
+    line-height: 105%;
+    color: var(--color-primary);
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: var(--color-primary);
+}
+
+.hero-section p {
+    font-size: 1.25rem;
+    padding: 0 3rem 0;
+}
+
+.hero-section strong {
+    font-size: 1.6rem;
+}
+
+.hero-section .button {
+    position: relative;
+}
+
+.hero-section .button::after {
+    position: absolute;
+    top: 3.8rem;
+    right: -1rem;
+    height: 48px;
+    width: 132px;
+}
+
+.decoration,
+.text-primary {
+    display: block;
+    position: relative;
+}
+
+.decoration::after {
+    position: absolute;
+    top: -1.7rem;
+    height: 36px;
+    width: 40px;
+}
+
+.projects-section {
+    padding-bottom: 18rem;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-top: 8rem;
+    margin-bottom: 16rem;
+}
+
+.card {
+    /* box-shadow: 10px 10px 350px -100px var(--color-black); */
+    background: #00000018;
+    border-radius: 1rem;
+    max-width: 17rem;
+    height: 33rem;
+    padding: 2rem 2rem 0 2rem;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+    align-self: center;
+    color: var(--color-black);
+}
+
+.card strong {
+    display: block;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: var(--color-primary);
+}
+
+p {
+    text-align:justify;
+}
+
+/* RESPONSIVIDADE */
+
+@media screen and (min-width: 40rem){
+
+    .cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (min-width: 60rem) {
+    h1,
+    h2 {
+        font-size: 4rem;
+    }
+    
+    .container {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 60rem;
+    }
+
+    .container.row-reverse {
+        flex-direction: row-reverse;
+    }
+
+    .about-column p {
+        font-size: 1.25rem;
+        max-width: 16rem;
+    }
+    
+}
+
+@media screen and (min-width: 75rem) {
+    .container, 
+    .projects-section {
+        max-width: 75rem;
+        margin: auto;
+    }
+}

@@ -1,0 +1,17 @@
+.container-about {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  p {
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
